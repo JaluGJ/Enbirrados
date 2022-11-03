@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "email": "thor@abc.com",
+    "name": "Thor",
+    "surname": "Thunder",
+    "password": "hash",
+    "isAdmin": false,
+    "banned": false,
+    "test": true,
+    "is_deleted": false,
+    "meetings": [
+      {
+        "id": 1,
+        "name": "party",
+        "date": "2022-10-27T22:43:25.585Z",
+        "beer": 1.5,
+        "temperature": 18,
+        "status": "Waiting",
+        "detail": "Odin Birthday",
+        "is_deleted": false
+      }
+    ],
+    "invitations": [
+      {
+        "id": 1,
+        "name": "party",
+        "date": "2022-10-27T22:43:25.585Z",
+        "info": "Hey! We are going to do a party with our good old dad. Come on, join!",
+        "is_deleted": false
+      }
+    ],
+    "profilePic": "https://i.imgur.com/7w7Zlvb.png"
+  },
+  {
+    "id": 1,
+    "email": "odin@abc.com",
+    "name": "Odin",
+    "surname": "God",
+    "password": "hash",
+    "isAdmin": false,
+    "banned": false,
+    "test": true,
+    "is_deleted": false,
+    "meetings": [
+      {
+        "id": 1,
+        "name": "party",
+        "date": "2022-10-27T22:43:25.585Z",
+        "beer": 1.5,
+        "temperature": 18,
+        "status": "Waiting",
+        "detail": "Odin Birthday",
+        "is_deleted": false
+      }
+    ],
+    "invitations": [
+      {
+        "id": 1,
+        "name": "party",
+        "date": "2022-10-27T22:43:25.585Z",
+        "info": "Hey! We are going to do a party with our good old dad. Come on, join!",
+        "is_deleted": false
+      }
+    ],
+    "profilePic": "https://i.pinimg.com/originals/92/20/70/9220702b490e8d8ef7ded737fca15043.jpg"
+  },
+  {
+    "id": 1,
+    "email": "loki@trol.com",
+    "name": "Loki",
+    "surname": "Trick",
+    "password": "hash",
+    "isAdmin": true,
+    "banned": false,
+    "test": true,
+    "is_deleted": false,
+    "meetings": [
+      {
+        "id": 1,
+        "name": "party",
+        "date": "2022-10-27T22:43:25.585Z",
+        "beer": 1.5,
+        "temperature": 18,
+        "status": "Waiting",
+        "detail": "Odin Birthday",
+        "is_deleted": false
+      }
+    ],
+    "invitations": [
+      {
+        "id": 1,
+        "name": "party",
+        "date": "2022-10-27T22:43:25.585Z",
+        "info": "Hey! We are going to do a party with our good old dad. Come on, join!",
+        "is_deleted": false
+      }
+    ],
+    "profilePic": "https://i.pinimg.com/originals/92/20/70/9220702b490e8d8ef7ded737fca15043.jpg"
+  }
+]

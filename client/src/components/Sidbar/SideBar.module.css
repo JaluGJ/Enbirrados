@@ -1,0 +1,49 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 60px;
+  background-color: rgb(204, 15, 15);
+  transition:width 300ms
+  
+}
+.container:hover{
+  width: 160px;
+}
+.button,
+.selected{
+  max-height: 53px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0 10px;
+  gap: 40px;
+  border: transparent;
+  transition-property: background-color, font-size;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+.selected{
+  background-color: rgba(0, 0, 0, 0.2)
+}
+.button{
+  background-color: transparent;
+}
+
+.button:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: large;
+}
+.profilePic{
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+

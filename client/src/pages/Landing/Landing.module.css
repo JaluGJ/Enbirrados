@@ -1,0 +1,21 @@
+
+.container{
+  height: 100vh;
+  background: url(../../img/landing-background.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.login{
+  /* background-color: green; */
+  align-self:center;
+}
+.logo{
+  align-self: center;
+}
+.logoImg{
+  background-size:cover;
+  height: 78.24vh;
+  width: 78.24vh;
+}
