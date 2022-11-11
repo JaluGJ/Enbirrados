@@ -19,7 +19,7 @@ export default function Landing() {
   return (
     <div className={style.container}>
       <div className={style.logo}>
-        <img className={style.logoImg} src={logo}/>
+        <img className={style.logoImg} alt={logo} src={logo}/>
       </div>
       <div className={style.login}>
         <Login/>

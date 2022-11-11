@@ -29,11 +29,13 @@ export default function MeetingCard({
   adminName,
   adminimg,
   status,
-  isAdmin, }) {
+  isAdmin,
+  invitations }) {
 
     
-    
     const [statu, setStatu] = useState({meetingId:id, status })
+    
+    const dispatch = useDispatch()
 
     React.useEffect(() => {
       if (new Date(date) < new Date() && status == 'On Going'){
@@ -42,7 +44,6 @@ export default function MeetingCard({
       }
     }, [])
     
-  const dispatch = useDispatch()
 
   const handleClick = (e) => {
     e.preventDefault()
@@ -66,7 +67,8 @@ export default function MeetingCard({
           </Typography>
           <HalfRating value={Math.ceil(beers / 6)} size={30} />
           <Typography variant="body2">
-            {Math.ceil(beers / 6)} packs, {beers} beers
+            Estimated: {Math.ceil(beers / 6)} packs, {beers} beers <br/>
+            Actual needed: {Math.ceil(((beers / invitations.length)*users.length) / 6)} packs, {(beers / invitations.length)*users.length} beers
           </Typography>
           <AvatarGroup total={users.length}>{
             users.map(user => {

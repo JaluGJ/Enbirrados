@@ -24,13 +24,14 @@ const smtpTransport = nodemailer.createTransport({
        clientId: CLIENT_ID,
        clientSecret: CLIENT_SECRET,
        refreshToken: REFRESH_TOKEN,
-       accessToken: accessToken
+       accessToken: accessToken,
+       expires: 3599
   },
   tls: {
     rejectUnauthorized: false
   }
 });
-
+ 
 
 module.exports={
   sendEmail: async (email, subject, html) => {

@@ -113,3 +113,15 @@
 .ok{
   outline: 2px green solid;
 }
+.span_error{
+  font-size: x-small;
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+.span_ok{
+  font-size: x-small;
+  margin: 0;
+  padding: 0;
+  color: green;
+}

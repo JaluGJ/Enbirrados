@@ -490,5 +490,53 @@ module.exports = {
   </body>
   
   </html>
+  `},
+  deletedUser:(name)=>{  return`<!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      img {
+        width: 90px;
+        height: 90px;
+      }
+  
+      h3,
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+  
+      p {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+  
+      .equip {
+        font-size: small;
+        font-style: italic;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div>
+      <h2>See you later ${name}! We will miss you</h2>
+      <p>Your account was deleted succesfully. </p>
+      <p>If you think this is is a mistake, please contact with admin tea through this mail</p>
+      <p>Thanks to use our services</p>
+      <p class="equip">The Enbirrados team <img
+          src="https://res.cloudinary.com/dvzgzgzln/image/upload/v1667323320/Embirrados/party_tgimhe.png"
+          alt="embirrados logo"></p>
+    </div>
+  </body>
+  
+  </html>
   `}
 }

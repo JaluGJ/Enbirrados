@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getUserAllData } from '../../../redux/actions'
 
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import MeetingCard from './Meeting Card/MeetingCard';
 
@@ -26,6 +25,7 @@ export default function Meetings() {
               <MeetingCard
               isAdmin={userInfo.isAdmin}
               id={meet.id}
+              key={meet.id}
               title={meet.name}
               date={meet.date}
               description={meet.detail}
@@ -35,6 +35,7 @@ export default function Meetings() {
               adminName={meet.hostName}
               adminimg={meet.hostPic}
               status={meet.status}
+              invitations={meet.invitations}
               />
             </Grid>
           )

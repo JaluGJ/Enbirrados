@@ -11,15 +11,14 @@ module.exports = {
       const invitation = await Invitation.findByPk(id)
       if (invitation.userId !== req.user.id) return res.status(401).json({ message: 'Unathorized access' })
       invitation.status = status
-      invitation.save()
+      await invitation.save()
       if (status === 'Accepted'){
 
         const meeting = await Meeting.findByPk(invitation.meetingId)
         const user = await User.findByPk(invitation.userId)
 
-        user.addMeeting(meeting)
+       await user.addMeeting(meeting)
       } 
-
       return res.json({ message: 'Everything ok', data: invitation })
     } catch (error) {
       console.log(error)

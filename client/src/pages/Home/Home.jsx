@@ -14,7 +14,9 @@ import { getUserAllData } from '../../redux/actions'
 
 export default function Home() {
   const [render, setRender] = useState('Home')
+  
   const dispatch = useDispatch()
+
   useEffect(() => {
     dispatch(getUserAllData())
   }, )

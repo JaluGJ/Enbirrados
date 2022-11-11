@@ -19,10 +19,10 @@ export default function Invitations() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
+      <Grid container spacing={1}>
         {userInfo.invitations?.map(inv => {
           return (
-            <Grid item xs={3}>
+            <Grid key={inv.id} item xs={2.8}>
               <InvitationCard 
               id={inv.id}
               userImg={userInfo.profilePic}
